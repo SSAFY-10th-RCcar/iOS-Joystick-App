@@ -11,6 +11,8 @@
 		C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E382B0741BA002D4D15 /* ContentView.swift */; };
 		C1DB5E3B2B0741BD002D4D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */; };
 		C1DB5E3E2B0741BD002D4D15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB5E3D2B0741BD002D4D15 /* Preview Assets.xcassets */; };
+		C1DB5E462B074286002D4D15 /* SwiftUIJoystick in Frameworks */ = {isa = PBXBuildFile; productRef = C1DB5E452B074286002D4D15 /* SwiftUIJoystick */; };
+		C1DB5E482B0742EA002D4D15 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E472B0742EA002D4D15 /* JoystickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		C1DB5E382B0741BA002D4D15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DB5E3D2B0741BD002D4D15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1DB5E472B0742EA002D4D15 /* JoystickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB5E462B074286002D4D15 /* SwiftUIJoystick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */,
 				C1DB5E382B0741BA002D4D15 /* ContentView.swift */,
+				C1DB5E472B0742EA002D4D15 /* JoystickView.swift */,
 				C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */,
 				C1DB5E3C2B0741BD002D4D15 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Joystick;
+			packageProductDependencies = (
+				C1DB5E452B074286002D4D15 /* SwiftUIJoystick */,
+			);
 			productName = Joystick;
 			productReference = C1DB5E332B0741BA002D4D15 /* Joystick.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C1DB5E2A2B0741BA002D4D15;
+			packageReferences = (
+				C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */,
+			);
 			productRefGroup = C1DB5E342B0741BA002D4D15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */,
 				C1DB5E372B0741BA002D4D15 /* JoystickApp.swift in Sources */,
+				C1DB5E482B0742EA002D4D15 /* JoystickView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/michael94ellis/SwiftUIJoystick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1DB5E452B074286002D4D15 /* SwiftUIJoystick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */;
+			productName = SwiftUIJoystick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1DB5E2B2B0741BA002D4D15 /* Project object */;
 }

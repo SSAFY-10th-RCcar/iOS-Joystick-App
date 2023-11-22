@@ -10,22 +10,21 @@ import SwiftUIJoystick
 import MapKit
 
 struct ContentView: View {
-    @StateObject private var monitor = JoystickMonitor()
-    @State private var position = MapCameraPosition.region(
-            MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: 37.501273, longitude: 127.039614),
-                span: MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
-            )
-        )
+    @StateObject private var monitor = JoystickMonitor(width: 250)
+    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
+    @StateObject private var locationPermission: LocationPermission = LocationPermission()
 
     var body: some View {
         ZStack {
-            Map(position: $position) {
+            Map(initialPosition: position) {
                 UserAnnotation()
             }
-            Circle()
-                .fill(Color.red)
-                .frame(width: 16, height: 16)
+            .mapStyle(.standard(elevation: .realistic))
+            .mapControls {
+                MapUserLocationButton()
+                MapCompass()
+                MapScaleView()
+            }
             VStack {
                 Spacer()
                 Text("XY Point = (x: \(monitor.xyPoint.x.formattedString), y: \(monitor.xyPoint.y.formattedString))")
@@ -34,6 +33,9 @@ struct ContentView: View {
                     .fixedSize()
                 Joystick(monitor: monitor, width: 250, shape: .circle)
             }
+        }
+        .onAppear() {
+            locationPermission.requestLocationPermission()
         }
     }
 }

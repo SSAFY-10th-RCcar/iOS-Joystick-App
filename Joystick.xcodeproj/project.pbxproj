@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74D19EA1C751A98F71A4FBD1 /* Pods_Joystick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C579D4442764879ACCAF91ED /* Pods_Joystick.framework */; };
+		C17CBBBD2B0E0B99008B59C4 /* MQTTAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CBBBC2B0E0B99008B59C4 /* MQTTAppState.swift */; };
+		C17CBBBF2B0E0BD2008B59C4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CBBBE2B0E0BD2008B59C4 /* MQTTManager.swift */; };
+		C18D81B82B0E082F00B72BC5 /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D81B72B0E082F00B72BC5 /* LocationPermission.swift */; };
 		C1DB5E372B0741BA002D4D15 /* JoystickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */; };
 		C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E382B0741BA002D4D15 /* ContentView.swift */; };
 		C1DB5E3B2B0741BD002D4D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */; };
 		C1DB5E3E2B0741BD002D4D15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DB5E3D2B0741BD002D4D15 /* Preview Assets.xcassets */; };
-		C1DB5E462B074286002D4D15 /* SwiftUIJoystick in Frameworks */ = {isa = PBXBuildFile; productRef = C1DB5E452B074286002D4D15 /* SwiftUIJoystick */; };
 		C1DB5E482B0742EA002D4D15 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E472B0742EA002D4D15 /* JoystickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FDBBC03EDA5E52CBF8E74C8 /* Pods-Joystick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joystick.debug.xcconfig"; path = "Target Support Files/Pods-Joystick/Pods-Joystick.debug.xcconfig"; sourceTree = "<group>"; };
+		C17CBBBC2B0E0B99008B59C4 /* MQTTAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTAppState.swift; sourceTree = "<group>"; };
+		C17CBBBE2B0E0BD2008B59C4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		C18D81B72B0E082F00B72BC5 /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
 		C1DB5E332B0741BA002D4D15 /* Joystick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joystick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickApp.swift; sourceTree = "<group>"; };
 		C1DB5E382B0741BA002D4D15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DB5E3D2B0741BD002D4D15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1DB5E472B0742EA002D4D15 /* JoystickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
+		C579D4442764879ACCAF91ED /* Pods_Joystick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joystick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98C6BC35F8F493833F73600 /* Pods-Joystick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joystick.release.xcconfig"; path = "Target Support Files/Pods-Joystick/Pods-Joystick.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +38,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1DB5E462B074286002D4D15 /* SwiftUIJoystick in Frameworks */,
+				74D19EA1C751A98F71A4FBD1 /* Pods_Joystick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C081DFD8FDCA98C035C381D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FDBBC03EDA5E52CBF8E74C8 /* Pods-Joystick.debug.xcconfig */,
+				F98C6BC35F8F493833F73600 /* Pods-Joystick.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C17CBBB92B0E0B43008B59C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1DB5E382B0741BA002D4D15 /* ContentView.swift */,
+				C1DB5E472B0742EA002D4D15 /* JoystickView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C17CBBBA2B0E0B4D008B59C4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C18D81B72B0E082F00B72BC5 /* LocationPermission.swift */,
+				C17CBBBE2B0E0BD2008B59C4 /* MQTTManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C17CBBBB2B0E0B6C008B59C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C17CBBBC2B0E0B99008B59C4 /* MQTTAppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C1DB5E2A2B0741BA002D4D15 = {
 			isa = PBXGroup;
 			children = (
 				C1DB5E352B0741BA002D4D15 /* Joystick */,
 				C1DB5E342B0741BA002D4D15 /* Products */,
+				5C081DFD8FDCA98C035C381D /* Pods */,
+				D5BD2FB362CBB5E34E56B0C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */,
-				C1DB5E382B0741BA002D4D15 /* ContentView.swift */,
-				C1DB5E472B0742EA002D4D15 /* JoystickView.swift */,
+				C17CBBB92B0E0B43008B59C4 /* View */,
+				C17CBBBA2B0E0B4D008B59C4 /* ViewModels */,
+				C17CBBBB2B0E0B6C008B59C4 /* Models */,
 				C1DB5E3A2B0741BD002D4D15 /* Assets.xcassets */,
 				C1DB5E3C2B0741BD002D4D15 /* Preview Content */,
 			);
@@ -72,6 +119,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D5BD2FB362CBB5E34E56B0C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C579D4442764879ACCAF91ED /* Pods_Joystick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,18 +134,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DB5E412B0741BD002D4D15 /* Build configuration list for PBXNativeTarget "Joystick" */;
 			buildPhases = (
+				FE6D401CC21459CE069EE996 /* [CP] Check Pods Manifest.lock */,
 				C1DB5E2F2B0741BA002D4D15 /* Sources */,
 				C1DB5E302B0741BA002D4D15 /* Frameworks */,
 				C1DB5E312B0741BA002D4D15 /* Resources */,
+				CED2DDAD1C9982B23F161C7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Joystick;
-			packageProductDependencies = (
-				C1DB5E452B074286002D4D15 /* SwiftUIJoystick */,
-			);
 			productName = Joystick;
 			productReference = C1DB5E332B0741BA002D4D15 /* Joystick.app */;
 			productType = "com.apple.product-type.application";
@@ -119,9 +173,6 @@
 				Base,
 			);
 			mainGroup = C1DB5E2A2B0741BA002D4D15;
-			packageReferences = (
-				C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */,
-			);
 			productRefGroup = C1DB5E342B0741BA002D4D15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,14 +194,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CED2DDAD1C9982B23F161C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joystick/Pods-Joystick-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Joystick/Pods-Joystick-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Joystick/Pods-Joystick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6D401CC21459CE069EE996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Joystick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1DB5E2F2B0741BA002D4D15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */,
+				C17CBBBF2B0E0BD2008B59C4 /* MQTTManager.swift in Sources */,
+				C17CBBBD2B0E0B99008B59C4 /* MQTTAppState.swift in Sources */,
 				C1DB5E372B0741BA002D4D15 /* JoystickApp.swift in Sources */,
 				C1DB5E482B0742EA002D4D15 /* JoystickView.swift in Sources */,
+				C18D81B82B0E082F00B72BC5 /* LocationPermission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +290,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -257,7 +353,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -278,6 +374,7 @@
 		};
 		C1DB5E422B0741BD002D4D15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FDBBC03EDA5E52CBF8E74C8 /* Pods-Joystick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -287,11 +384,14 @@
 				DEVELOPMENT_TEAM = 68LU7Q7XD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "You will need to obtain Bluetooth permissions to connect with the RC car.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "You will need to obtain Location permissions to check your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "You will need to obtain Location permissions to check your position.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +407,7 @@
 		};
 		C1DB5E432B0741BD002D4D15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98C6BC35F8F493833F73600 /* Pods-Joystick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,11 +417,14 @@
 				DEVELOPMENT_TEAM = 68LU7Q7XD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "You will need to obtain Bluetooth permissions to connect with the RC car.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "You will need to obtain Location permissions to check your position.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "You will need to obtain Location permissions to check your position.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,25 +460,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/michael94ellis/SwiftUIJoystick";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C1DB5E452B074286002D4D15 /* SwiftUIJoystick */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C1DB5E442B074286002D4D15 /* XCRemoteSwiftPackageReference "SwiftUIJoystick" */;
-			productName = SwiftUIJoystick;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1DB5E2B2B0741BA002D4D15 /* Project object */;
 }

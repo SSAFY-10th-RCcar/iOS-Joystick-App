@@ -1,0 +1,26 @@
+PODS:
+  - CocoaMQTT (2.1.6):
+    - CocoaMQTT/Core (= 2.1.6)
+  - CocoaMQTT/Core (2.1.6):
+    - MqttCocoaAsyncSocket (~> 1.0.8)
+  - MqttCocoaAsyncSocket (1.0.8)
+  - SwiftUIJoystick (1.0.3)
+
+DEPENDENCIES:
+  - CocoaMQTT
+  - SwiftUIJoystick
+
+SPEC REPOS:
+  trunk:
+    - CocoaMQTT
+    - MqttCocoaAsyncSocket
+    - SwiftUIJoystick
+
+SPEC CHECKSUMS:
+  CocoaMQTT: 1f206228b29318eabdacad0c2e4e88575922c27a
+  MqttCocoaAsyncSocket: 77d3b74f76228dd5a05d1f9526eab101d415b30c
+  SwiftUIJoystick: f7dfa15d6e3e4fa8d2368beaa6baeab7fee4afdb
+
+PODFILE CHECKSUM: 879f2124941fb5fcdc3fc400cf39cc345378c7b8
+
+COCOAPODS: 1.14.3

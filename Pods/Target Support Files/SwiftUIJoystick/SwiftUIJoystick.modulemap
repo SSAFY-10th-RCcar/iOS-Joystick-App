@@ -1,0 +1,6 @@
+framework module SwiftUIJoystick {
+  umbrella header "SwiftUIJoystick-umbrella.h"
+
+  export *
+  module * { export * }
+}

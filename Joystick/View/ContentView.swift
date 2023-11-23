@@ -44,7 +44,9 @@ struct ContentView: View {
                 Spacer()
                 Joystick(monitor: monitor, width: 250, shape: .circle)
                     .onChange(of: joystickPointData) {
-                        send(message: String(describing: monitor.xyPoint.x) + " " + String(describing: monitor.xyPoint.y))
+                        if (mqttManager.isSubscribed()) {
+                            send(message: String(describing: monitor.xyPoint.x) + " " + String(describing: monitor.xyPoint.y))
+                        }
                     }
                 Spacer()
                 Button {

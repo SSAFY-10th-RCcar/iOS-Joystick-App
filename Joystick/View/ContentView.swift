@@ -18,6 +18,10 @@ struct ContentView: View {
     @State private var topic = ""
     @StateObject private var locationPermission: LocationPermission = LocationPermission()
     @StateObject private var mqttManager: MQTTManager = MQTTManager.shared()
+    private var joystickPointData: [CGFloat] {[
+        monitor.xyPoint.x,
+        monitor.xyPoint.y
+    ]}
 
     var body: some View {
         ZStack {
@@ -38,12 +42,8 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 Spacer()
-                Text("XY Point = (x: \(monitor.xyPoint.x.formattedString), y: \(monitor.xyPoint.y.formattedString))")
-                    .fixedSize()
-                Text("Polar Point = (radians: \(monitor.polarPoint.degrees.formattedString), y: \(monitor.polarPoint.distance.formattedString))")
-                    .fixedSize()
                 Joystick(monitor: monitor, width: 250, shape: .circle)
-                    .onChange(of: monitor.xyPoint.x) {
+                    .onChange(of: joystickPointData) {
                         send(message: String(describing: monitor.xyPoint.x) + " " + String(describing: monitor.xyPoint.y))
                     }
                 Spacer()

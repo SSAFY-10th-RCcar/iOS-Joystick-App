@@ -10,6 +10,7 @@
 		74D19EA1C751A98F71A4FBD1 /* Pods_Joystick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C579D4442764879ACCAF91ED /* Pods_Joystick.framework */; };
 		C17CBBBD2B0E0B99008B59C4 /* MQTTAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CBBBC2B0E0B99008B59C4 /* MQTTAppState.swift */; };
 		C17CBBBF2B0E0BD2008B59C4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CBBBE2B0E0BD2008B59C4 /* MQTTManager.swift */; };
+		C17CBBC12B0ED5D5008B59C4 /* ConnectionStatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CBBC02B0ED5D5008B59C4 /* ConnectionStatusBarView.swift */; };
 		C18D81B82B0E082F00B72BC5 /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18D81B72B0E082F00B72BC5 /* LocationPermission.swift */; };
 		C1DB5E372B0741BA002D4D15 /* JoystickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */; };
 		C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB5E382B0741BA002D4D15 /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 		9FDBBC03EDA5E52CBF8E74C8 /* Pods-Joystick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joystick.debug.xcconfig"; path = "Target Support Files/Pods-Joystick/Pods-Joystick.debug.xcconfig"; sourceTree = "<group>"; };
 		C17CBBBC2B0E0B99008B59C4 /* MQTTAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTAppState.swift; sourceTree = "<group>"; };
 		C17CBBBE2B0E0BD2008B59C4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		C17CBBC02B0ED5D5008B59C4 /* ConnectionStatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusBarView.swift; sourceTree = "<group>"; };
 		C18D81B72B0E082F00B72BC5 /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
 		C1DB5E332B0741BA002D4D15 /* Joystick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joystick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DB5E362B0741BA002D4D15 /* JoystickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DB5E382B0741BA002D4D15 /* ContentView.swift */,
+				C17CBBC02B0ED5D5008B59C4 /* ConnectionStatusBarView.swift */,
 				C1DB5E472B0742EA002D4D15 /* JoystickView.swift */,
 			);
 			path = View;
@@ -244,6 +247,7 @@
 				C1DB5E392B0741BA002D4D15 /* ContentView.swift in Sources */,
 				C17CBBBF2B0E0BD2008B59C4 /* MQTTManager.swift in Sources */,
 				C17CBBBD2B0E0B99008B59C4 /* MQTTAppState.swift in Sources */,
+				C17CBBC12B0ED5D5008B59C4 /* ConnectionStatusBarView.swift in Sources */,
 				C1DB5E372B0741BA002D4D15 /* JoystickApp.swift in Sources */,
 				C1DB5E482B0742EA002D4D15 /* JoystickView.swift in Sources */,
 				C18D81B82B0E082F00B72BC5 /* LocationPermission.swift in Sources */,
